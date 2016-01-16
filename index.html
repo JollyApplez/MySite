@@ -8,6 +8,7 @@
     <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
 	<link href="assets/css/get-shit-done.css" rel="stylesheet" />
     <link href="assets/css/demo.css" rel="stylesheet" />
+		<link href="bootstrap3/css/scrolling-nav.css" rel="stylesheet">
 
     <!--     Font Awesome     -->
     <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
@@ -15,33 +16,42 @@
 
 </head>
 <body>
+	<!--
+			navbar-sticky, logo/home left, Links to page element right.
+			-->
 	<div id="navbar-full">
-     <div id="navbar">
-     <!--
-         navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
-         -->
-         <nav class="navbar navbar-ct-grey navbar-transparent navbar-fixed-top" role="navigation">
+		 <div id="navbar">
+		 <!--
+				 navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
+				 -->
+				 <nav class="navbar navbar-ct-grey navbar-transparent navbar-fixed-top" role="navigation">
 					 <div class="container">
-             <!-- Brand and toggle get grouped for better mobile display -->
-             <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                 <span class="sr-only">Toggle navigation</span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="#">Christoffer Mässing</a>
-             </div>
-						 <ul class="nav navbar-nav navbar-right">
-									 <li><a href="#">Register</a></li>
+						 <!-- Brand and toggle get grouped for better mobile display -->
+						 <div class="navbar-header">
+							 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								 <span class="sr-only">Toggle navigation</span>
+								 <span class="icon-bar"></span>
+								 <span class="icon-bar"></span>
+								 <span class="icon-bar"></span>
+							 </button>
+							 <a class="navbar-brand" href="#">Christoffer Mässing</a>
+						 </div>
 
-									 <li><button href="#" class="btn btn-round btn-default">Sign in</button></li>
+						 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						 <ul class="nav navbar-nav navbar-right">
+									 <li><a class="page-scroll" href="#about">Om Mig</a></li>
+
+									 <li><a class="page-scroll" href="#services">Tjänster</a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
 				</nav>
+			</div><!--  end navbar -->
+		</div> <!-- end menu-dropdown -->
+		<!--
+		Blured landing-container -->
 <div class='blurred-container'>
-     <a href="http://creative-tim.com">
+     <a href="http://localhost/MySIte/index.html">
          <div class="logo-container">
             <div class="logo">
                 <img src="assets/img/new_logo.png">
@@ -58,38 +68,41 @@
     </div>
   <div class="img-src" style="background-image: url('assets/img/cover_4.jpg')"></div>
   <div class='img-src blur' style="background-image: url('assets/img/cover_4_blur.jpg')"></div>
-</div>
-		<div class="main">
-		    <div class="container tim-container">
-		        <div id="extras">
-		            <div class="space"></div>
-		            <div class="row">
-		                <div class="col-md-7">
-		                        <img src="assets/img/dulau.jpg" alt="Rounded Image" class="img-rounded">
-		                </div>
-		                <div class="col-md-5">
-		                                <h1 class="text-center">Om Mig
+	</div>
 
-		                                <small class="subtitle">Lär känna Christoffer Mässing, vår bästa webbutvecklare</small></h1>
-		                                <hr>
-		                                    <p>
-		                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-		                                    </p>
-		                                    <p>
-                                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
-		                                    </p>
-		                                    <p>
-		                                    "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-					                             </p>
+	<!--
+ 	Aboutpage -->
+	<section id="about" class="about-section">
+	<div class="main">
+    <div class="container tim-container">
+        <div id="extras">
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-7">
+                        <img src="assets/img/dulau.jpg" alt="Rounded Image" class="img-rounded">
+                </div>
+                <div class="col-md-5">
+                  <h1 class="text-center">Om Mig
 
-		                </div>
-		            </div>
-		        </div>
+                  <small class="subtitle">Lär känna Christoffer Mässing, vår bästa webbutvecklare</small></h1>
+                  <hr>
+                      <p>
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                      </p>
+                      <p>
+                      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+                      </p>
+                      <p>
+                      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                     </p>
+                </div>
+            </div>
+        </div>
 		    <!--     end extras -->
-		    </div>
+    </div>
 		<!-- end container -->
-		<div class="space-30"></div>
-		</div>
+	<div class="space-30"></div>
+	</div>
 		<div class="main">
 		     <div class="section-gray">
 		        <div class="container">
@@ -805,7 +818,7 @@
 <div class="space-30"></div>
 </div>
 
-
+<section id="services" class="services-section">
 <!-- end main -->
 
 <div class="parallax-pro">
@@ -854,10 +867,13 @@
 	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
 
 	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="bootstrap3/js/jquery.easing.min.js"></script>
+	<script src="bootstrap3/js/scrolling-nav.js"></script>
 	<script src="assets/js/gsdk-checkbox.js"></script>
 	<script src="assets/js/gsdk-radio.js"></script>
 	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
 	<script src="assets/js/get-shit-done.js"></script>
+
 
     <script src="assets/js/custom.js"></script>
 
