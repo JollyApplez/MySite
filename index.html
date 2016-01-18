@@ -1185,6 +1185,8 @@ About-page -->
 
 	   var map = new google.maps.Map(document.getElementById('map'), {
 	     zoom: 5,
+			 minZoom: 3,
+			 maxZoom: 14,
 	     center: {lat: 57.703775, lng: 11.969959},  // Gothenburg.
 	     mapTypeControlOptions: {
 	       mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
