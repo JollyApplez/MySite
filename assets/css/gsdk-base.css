@@ -411,6 +411,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     font-size: 16px;
+    z-index: 1;
 }
 .navbar-default {
     background-color: #D9D9D9;
@@ -446,6 +447,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
 .navbar-transparent{
     padding-top: 15px;
     background-color: rgba(0,0,0,.0);
+    z-index: 5;
 }
 .navbar-transparent .navbar-brand, [class*="navbar-ct"] .navbar-brand{
     color: #FFFFFF;
@@ -893,7 +895,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
     right: 0;
     top: 85px;
     width: 100%;
-    z-index: 3;
+    z-index: 6;
     transition: all 0.3s;
 }
 .navbar:not(.navbar-transparent) .alert{
@@ -1068,7 +1070,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
     display: inline-block;
     position: absolute;
     top: 50%;
-    z-index: 5;
+    z-index: 1;
 }
 .carousel-control .fa{
     font-size: 35px;
@@ -1134,7 +1136,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
     left: 50px;
     position: absolute;
     top: 20px;
-     z-index: 3;
+     z-index: 2;
 }
 .logo-container .logo{
     overflow: hidden;
@@ -1163,7 +1165,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
     text-transform: uppercase;
     top: 100px;
-    z-index: 3;
+    z-index: 1;
 }
 .blurred-container .motto .border{
     float: left;

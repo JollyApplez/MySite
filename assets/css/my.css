@@ -16,3 +16,7 @@
   height: 500px;
   width: 100%;
 }
+
+.carousel-indicators {
+  z-index: 1;
+}
