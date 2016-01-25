@@ -13,7 +13,7 @@
 .tim-typo{
     padding-left: 25%;
     margin-bottom: 40px;
-    position: relative;   
+    position: relative;
 }
 .tim-typo .tim-note{
     bottom: 10px;
@@ -37,9 +37,8 @@
     margin-right: 20px;
 }
 #navbar-full .navbar{
-    border-radius: 0 !important;
+    border-radius: 0;
     margin-bottom: 0;
-    z-index: 2;
 }
 .navigation-example{
     margin-top: 0px;
@@ -49,7 +48,7 @@
     display: block;
 }
 .navigation-example .img-src{
-    background-attachment: scroll; 
+    background-attachment: scroll;
 }
 /*
 .main{
@@ -92,7 +91,7 @@
     padding-top: 20px;
 }
 .subscribe-form .form-control{
-    
+
 }
 
 .space-100{
@@ -274,7 +273,7 @@
 }
 .parallax-pro > img{
     width: 100%;
-    position: absolute;  
+    position: absolute;
 }
 
 @media (max-width: 768px){
